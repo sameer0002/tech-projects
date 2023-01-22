@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        #sq{
+        height: 200px;
+        width: 200px;
+        background-color: red;
+        position: relative;
+        }
+    </style>
+</head>
+<body>
+    <h1>reaction game</h1>
+    
+    <div id="sq"></div>
+    
+    <script>
+
+        var start = new Date().getTime();
+        function getRandomColor() {
+        var letters = '0123456789ABCDEF';
+        var color = '#';
+        for (var i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+        }
+
+
+        
+        function move() {
+            
+            var left;
+            var right;
+            var wh;
+            left = Math.random()*300;
+            right = Math.random()*300;
+            wh = ((Math.random()*400)+100);
+
+            document.getElementById("sq").style.left = left + "px";
+            document.getElementById("sq").style.top = right + "px";
+            document.getElementById("sq").style.width = wh + "px";
+            document.getElementById("sq").style.height = wh + "px";
+            document.getElementById("sq").style.display = "block";
+            document.getElementById("sq").style.backgroundColor = getRandomColor();
+            start = new Date().getTime();
+        }
+
+        move();
+
+        document.getElementById("sq").onclick = function(){
+            
+            document.getElementById("sq").style.display = "none";
+
+            var end = new Date().getTime();
+            var timetaken = (end - start) / 1000;
+            alert(timetaken);
+            move();
+            
+        }
+
+    </script>
+</body>
+</html>
