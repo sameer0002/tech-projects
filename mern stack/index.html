@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mern project 1</title>
+
+</head>
+<body class="body">
+    <h1 class="h1">G a l a x y</h1>
+    <h2 class="h2">hello  human,  enjoy  your  ride.</h2>
+    <img src="dark space pic.jpeg" alt="galaxy" height="100%" width="100%">
+    <p>Some galaxies are similar to the Milky Way, but some are quite different. Galaxies are 
+    sprawling systems of dust, gas, dark matter, and anywhere from a million to a trillion stars 
+    that are held together by gravity.
+    all large galaxies are thought to also contain supermassive black holes at their centers.
+    The closest galaxy to the Milky Way is Andromeda, which is around 2.6 million light 
+    years away from us. Many galaxies are more than 100,000 light years across in distance. 
+    It takes over two hundred million 
+    years for the sun to orbit the center of the galaxy. This is called a galactic year.</p>
+    <hr>
+
+    <p><strong>more information</strong></p>
+    <ul>
+        <li>Mass : 4 kg</li>
+        <li>diameter : 5 kg</li>
+        <li>depth : 2 kg</li>
+        <li>volume : 3 kg <a href="https://www.nasa.gov/">click here</a></li>
+    </ul>
+    <hr>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/QYssYC8dSXA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr>
+
+    <p><strong>bakwas hai</strong></p>
+    <ol>
+        <li>bakwas</li>
+        <li>bakwas</li>
+        <li>bakwas</li>
+    </ol>
+    <hr>
+
+    <table>
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>class</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>sameer</td>
+                <td>BTCE 3rd</td>
+            </tr>
+            <tr>
+                <td>reemas</td>
+                <td>BTCE 50th</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+
+    <form action="https://www.space.com/">
+        <p>go away, this is the end</p>
+        <input type="submit">
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <!-- <p id="text">change me please</p>  
+    <button id="change">click me , ill change you</button> -->
+
+
+
+
+
+
+
+    
+    <!-- <div class="circle" id="red"></div>
+    <div class="circle" id="blue"></div>
+    <div class="circle" id="green"></div> -->
+
+
+
+
+    <!-- <p id="p1"></p> -->
+    <!-- <input id="input1" type="text">
+    <button id="button1">guess</button> -->
+
+
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+
+
+    <!-- reaction tester game / box game -->
+
+
+
+    <h1>reaction game</h1>
+    
+    <div id="sq"></div>
+    <script>
+        var start = new Date().getTime();
+
+        function move() {
+            
+            var left;
+            var top;
+            var wh;
+            left = Math.random()*300;
+            right = Math.random()*300;
+            wh = ((Math.random()*300)+100);
+
+            document.getElementById("sq").style.left = left;
+            document.getElementById("sq").style.top = top;
+            document.getElementById("sq").style.width = wh;
+            document.getElementById("sq").style.height = wh;
+            document.getElementById("sq").style.display = "block";
+            var start = new Date().getTime();
+        }
+
+        move();
+
+        document.getElementById("sq").onclick = function(){
+
+            document.getElementById("sq").style.display = "none";
+
+            var end = new Date().getTime();
+            var timetaken = (end - start) / 1000;
+            alert(timetaken);
+            move();
+        }
+
+
+
+
+
+
+
+
+// //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        // while loop 
+        // var i = 0;
+        // while (i<2) {
+        //     alert("helloiui");
+        //     i++;
+        // }
+
+        // for loop
+
+        // var arr = [1,2,3];
+        // var j = "";
+        // for (var i = 0; i < 3; i++) {
+        //     // const element = arr[i];
+        //     // alert(i);
+
+        //     j = j + " " + arr[i];
+        //     document.getElementById("p1").innerHTML = j;
+            
+        // }
+        
+    //    var arr = new Array(); // 1st method of defining arrays
+    //    arr[0]=1; // inserting an element at zeroth index
+    //    arr[1]=2; // inserting an element at 1st index
+    //    console.log(arr); // to print the array
+
+    //    var animals = [1,2,3,4,5];  // 2nd method of defining arrays
+    //    console.log(animals); 
+
+    //    animals.push(200);    // inserts the entered element at last position in the array
+    //    console.log(animals); // printing array
+
+    //    animals.pop();        // by default deletes the last element as value is not specified 
+    //    console.log(animals); // printing array
+       
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    //    var n = 0; //useranswer
+    //    document.getElementById("button1").onclick = function(){
+    //        document.getElementById("input1").value;
+    //        x = Math.floor(Math.random() * 5)+1;
+    //     //    console.log(x);
+    //     if(n == x){
+    //         alert("same pinch!!!");
+    //     }
+    //     else{
+    //         alert("guess again, it's not a match :(");
+    //     }
+
+    //    }
+
+       
+
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    //created a function which changes the paragraph by fetching 
+        //the value which was entered by user in input section
+
+        // document.getElementById("button1").onclick = function () { 
+        //     var val = ""; //defined a variable val
+        //     val = document.getElementById("input1").value; //to store the value of val variable from input section
+        //     console.log(val);
+        //     //document.getElementById("p1").innerHTML = val; //to change the value of innerhtml of paragraph from input section
+        // }
+        
+
+
+        // document.getElementById("red").onclick = function () {
+        //     document.getElementById("red").style.display = "none";
+        // }
+
+        // document.getElementById("blue").onclick = function () {
+        //     document.getElementById("blue").style.display = "none";
+        // }
+
+        // document.getElementById("green").onclick = function () {
+        //     document.getElementById("green").style.display = "none";
+        // }
+
+
+        // document.getElementById("change").onclick = function () {
+        //     // alert("button clicked");
+        //     document.getElementById("text").style.fontSize = "100px";
+        //     document.getElementById("text").style.color = "red";
+        // }
+
+
+
+
+        
+        
+        
+        
+        
+        
+        // alert("Hello world"); alert creates an alert / pop up
+        // append text , replace text , fill text
+        // document.getElementById("change") -> you are accessing the entire document and fetching that particular element's id
+        // onclick --> it simply performs a function right after you click that particular button
+        // document.getElementById("change").onclick = function(){
+        //     document.getElementById("text").innerHTML = "yes"
+        // } --->> this innerHTML function changes the text of that particular HTML element which we fetched 
+    </script>
+    
+
+</body>
+</html>
